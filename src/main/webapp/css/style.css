@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* Color Tokens (Material 3 Purple) */
+:root {
+    --primary: #e155dc;
+    --primary-container: #EADDFF;
+    --on-primary: #a2f1dd;
+
+    --surface: #FFFBFE;
+    --on-surface: #1C1B1F;
+
+    --outline: #CAC4D0;
+    --error: #B3261E;
+
+    --shadow: rgba(0,0,0,0.1);
+}
+
+/* Body */
+body {
+    background: var(--surface);
+    color: var(--on-surface);
+    padding: 0;
+}
+
+/* Top App Bar */
+.topbar {
+    width: 100%;
+    background: var(--primary);
+    padding: 24px 30px;
+    color: var(--on-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px var(--shadow);
+}
+
+.topbar-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.topbar-nav a {
+    margin-left: 30px;
+    color: var(--on-primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.topbar-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container (Card) */
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    background: #a1efdb;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px var(--shadow);
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 18px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* Buttons */
+button, .btn {
+    background: var(--primary);
+    color: var(--on-primary);
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover, .btn:hover {
+    background: #7e3a89;
+}
+
+/* Inputs */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--outline);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+th {
+    background: var(--primary-container);
+    padding: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--outline);
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid var(--outline);
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: var(--outline);
+}
