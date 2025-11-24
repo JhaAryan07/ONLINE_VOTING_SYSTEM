@@ -13,7 +13,7 @@
     <div class="header">
         <img src="${pageContext.request.contextPath}/images/emblem.png" alt="Government Emblem">
         <h1>Online Voting System</h1>
-        <p>Government of India</p>
+        <p>GUVI PROJECT THIRD SEMESTER</p>
     </div>
 
     <div class="navbar">
@@ -28,11 +28,11 @@
     <form action="vote" method="post">
 
         <label>Select Candidate</label>
-        <select name="candidate" required>
+        <select name="candidateId" required>
             <option value="">-- Choose One --</option>
-            <option value="Candidate A">Candidate A</option>
-            <option value="Candidate B">Candidate B</option>
-            <option value="Candidate C">Candidate C</option>
+            <option value="1">Alice (Party A)</option>
+            <option value="2">Bob (Party B)</option>
+            <option value="3">Charlie (Party C)</option>
         </select>
 
         <button type="submit">Submit Vote</button>

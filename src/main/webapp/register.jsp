@@ -12,7 +12,7 @@
     <div class="header">
         <img src="${pageContext.request.contextPath}/images/emblem.png" alt="Government Emblem">
         <h1>Online Voting System</h1>
-        <p>Government of India</p>
+        <p>GUVI PROJECT THIRD SEMESTER</p>
     </div>
 
     <div class="navbar">

@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,19 +5,26 @@
     font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
 
-/* Color Tokens (Material 3 Purple) */
+/* Color Tokens (Professional Navy & Slate) */
 :root {
-    --primary: #e155dc;
-    --primary-container: #EADDFF;
-    --on-primary: #a2f1dd;
+    /* A deep, trustworthy corporate blue */
+    --primary: #0f4c81;
+    /* A subtle light blue for table headers/accents */
+    --primary-container: #f0f4f8;
+    /* Text on top of primary color (White) */
+    --on-primary: #ffffff;
 
-    --surface: #FFFBFE;
-    --on-surface: #1C1B1F;
+    /* Main background (Light Grey) */
+    --surface: #f8f9fa;
+    /* Main Text Color (Dark Slate - softer than pure black) */
+    --on-surface: #343a40;
 
-    --outline: #CAC4D0;
-    --error: #B3261E;
+    /* Borders and Inputs */
+    --outline: #dee2e6;
+    --error: #dc3545;
 
-    --shadow: rgba(0,0,0,0.1);
+    /* Real shadow (Transparent Black) */
+    --shadow: rgba(0, 0, 0, 0.1);
 }
 
 /* Body */
@@ -37,41 +43,49 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px 6px var(--shadow);
+    /* subtle shadow for depth */
+    box-shadow: 0 2px 8px var(--shadow);
 }
 
 .topbar-title {
-    font-size: 30px;
+    font-size: 24px; /* Slightly reduced for elegance */
     font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
 .topbar-nav a {
     margin-left: 30px;
-    color: var(--on-primary);
+    color: var(--on-primary); /* Ensures links are white */
     text-decoration: none;
     font-weight: 500;
     font-size: 15px;
+    opacity: 0.9;
+    transition: opacity 0.2s;
 }
 
 .topbar-nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    opacity: 1;
 }
 
 /* Container (Card) */
 .container {
     max-width: 850px;
     margin: 40px auto;
-    background: #a1efdb;
-    padding: 28px;
-    border-radius: 14px;
-    box-shadow: 0 4px 10px var(--shadow);
+    /* Changed from Mint Green to White for professionalism */
+    background: #ffffff;
+    padding: 32px; /* increased breathing room */
+    border-radius: 8px; /* slightly sharper corners */
+    border: 1px solid var(--outline);
+    box-shadow: 0 4px 12px var(--shadow);
 }
 
 /* Headings */
 h2 {
-    margin-bottom: 18px;
-    font-size: 26px;
-    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
 }
 
 /* Buttons */
@@ -79,15 +93,18 @@ button, .btn {
     background: var(--primary);
     color: var(--on-primary);
     border: none;
-    padding: 10px 20px;
-    font-size: 15px;
-    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
     cursor: pointer;
     margin-top: 12px;
+    transition: background 0.2s ease;
 }
 
 button:hover, .btn:hover {
-    background: #7e3a89;
+    /* Darker blue on hover */
+    background: #0a365c;
 }
 
 /* Inputs */
@@ -96,28 +113,42 @@ input[type=password] {
     width: 100%;
     padding: 12px;
     border: 1px solid var(--outline);
-    border-radius: 8px;
+    border-radius: 6px;
     margin-bottom: 16px;
     font-size: 15px;
+    transition: border-color 0.2s;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    outline: none;
+    border-color: var(--primary);
 }
 
 /* Table */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 th {
     background: var(--primary-container);
-    padding: 12px;
+    color: var(--primary); /* Blue text on light blue bg */
+    padding: 14px;
     font-weight: 600;
-    border-bottom: 1px solid var(--outline);
+    text-align: left; /* Professional standard is left-aligned */
+    border-bottom: 2px solid var(--outline);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 td {
-    padding: 12px;
+    padding: 14px;
     border-bottom: 1px solid var(--outline);
+    color: var(--on-surface);
+    font-size: 14px;
 }
 
 /* Footer */
@@ -126,5 +157,29 @@ td {
     text-align: center;
     padding: 20px;
     font-size: 13px;
-    color: var(--outline);
+    color: #6c757d; /* Muted slate for footer text */
+}
+/* Center Header + Emblem */
+.header {
+    text-align: center;          /* Centers text and inline elements */
+    margin-bottom: 25px;         /* Adds spacing below emblem */
+}
+
+.header img {
+    display: block;              /* Allows margin auto to work */
+    margin: 0 auto 20px auto;    /* Centers the image horizontally */
+    max-width: 280px;            /* Optional: scale image */
+}
+.header h1 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.header p {
+    margin-top: 4px;
+    color: #555;
+}
+/* Add soft artistic pattern behind whole page */
+body {
+    background: var(--surface) url("https://www.transparenttextures.com/patterns/diagmonds-light.png") repeat;
 }
