@@ -11,10 +11,11 @@ A secure, Java-based electronic voting system designed to ensure integrity and t
 ## 🛠️ Tech Stack
 * **Backend:** Java (Maven)
 * **Frontend:** HTML, CSS, JavaScript
-* **Database:** [Add your DB here, e.g., MySQL]
+* **Database:** [ MySQL]
 
 ## ⚙️ Installation & Setup
 1. Clone the repository:
    ```bash
    git clone [https://github.com/JhaAryan07/GUVI-SEM-3.git](https://github.com/JhaAryan07/GUVI-SEM-3.git)
+
 
