@@ -138,5 +138,8 @@ INSERT INTO candidates (name, party) VALUES
 
 
 
+## **AUTHOR**
+[JhaAryan07](https://github.com/JhaAryan07)
+
 
 
