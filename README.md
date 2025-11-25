@@ -12,6 +12,7 @@ A secure, Java-based electronic voting system designed to ensure integrity and t
 * **Backend:**  Java , SERVLET, JSP (Maven)
 * **Frontend:** CSS, JavaScript
 * **Database:** [ MySQL]
+
 A secure, Java-based electronic voting system designed to ensure integrity and transparency in election processes.
 
 ## 🚀 Features
@@ -140,6 +141,7 @@ INSERT INTO candidates (name, party) VALUES
 
 ## **AUTHOR**
 [JhaAryan07](https://github.com/JhaAryan07)
+
 
 
 
