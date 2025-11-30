@@ -15,17 +15,6 @@ A secure, Java-based electronic voting system designed to ensure integrity and t
 
 A secure, Java-based electronic voting system designed to ensure integrity and transparency in election processes.
 
-## 🚀 Features
-* **Voter Authentication:** Secure login mechanism for voters.
-* **Real-time Tallying:** Instant calculation of votes.
-* **Admin Dashboard:** Management interface for candidates and elections.
-* **Secure Architecture:** Built to prevent double-voting and data tampering.
-
-## 🛠️ Tech Stack
-* **Backend:** Java (Maven)
-* **Frontend:** HTML, CSS, JavaScript
-* **Database:** [ MySQL]
-
 ## Project Structure
 ```
 SecuredVoting/
@@ -141,6 +130,7 @@ INSERT INTO candidates (name, party) VALUES
 
 ## **AUTHOR**
 [JhaAryan07](https://github.com/JhaAryan07)
+
 
 
 
