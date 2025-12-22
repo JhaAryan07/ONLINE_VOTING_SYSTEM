@@ -15,7 +15,7 @@ A secure, Java-based electronic voting system designed to ensure integrity and t
 
 A secure, Java-based electronic voting system designed to ensure integrity and transparency in election processes.
 
-## Project Structure
+## Project Structure:
 ```
 SecuredVoting/
 ├── .gitignore
@@ -131,6 +131,7 @@ INSERT INTO candidates (name, party) VALUES
 ## **AUTHOR**
 [JhaAryan07](https://github.com/JhaAryan07)
 
+Neeraj singh 
 
 
 
