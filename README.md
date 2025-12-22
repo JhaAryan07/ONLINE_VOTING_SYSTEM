@@ -132,6 +132,7 @@ INSERT INTO candidates (name, party) VALUES
 [JhaAryan07](https://github.com/JhaAryan07)
 
 Neeraj singh 
+Nitin Sharma 
 
 
 
