@@ -1,4 +1,4 @@
-# Secure Voting System
+# ONLINE Voting System
 
 A secure, Java-based electronic voting system designed to ensure integrity and transparency in election processes.
 
@@ -130,6 +130,7 @@ INSERT INTO candidates (name, party) VALUES
 
 ## **AUTHOR**
 [JhaAryan07](https://github.com/JhaAryan07)
+
 
 
 
